@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -173,10 +173,10 @@
 
         FUNCTION {
             bindings = <
-&kp F1             &kp F2             &kp F3             &kp F4   &kp F5                     &none               &none               &none           &none                &kp DELETE
-&kp F6             &kp F7             &kp F8             &kp F9   &kp F10                    &kp LC(UP_ARROW)    &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT_ARROW)  &trans
-&kp LA(LG(LS(S)))  &kp LA(LG(LS(F)))  &kp LS(LG(LA(T)))  &kp F11  &kp F12                    &kp LC(DOWN_ARROW)  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &trans
-&trans             &trans             &trans             &trans   &trans   &trans    &trans  &trans                                  &trans          &trans               &trans
+&kp F1             &kp F2             &kp F3             &kp F4   &kp F5                                 &none                &none           &none           &none            &kp DELETE
+&kp F6             &kp F7             &kp F8             &kp F9   &kp F10                                &kp LC(UP_ARROW)     &none           &kp UP_ARROW    &none            &none
+&kp LA(LG(LS(S)))  &kp LA(LG(LS(F)))  &kp LS(LG(LA(T)))  &kp F11  &kp F12                                &kp LC(DOWN_ARROW)   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
+&trans             &trans             &trans             &trans   &trans   &trans    &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)                  &none           &none            &trans
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_LEFT SCRL_RIGHT>;

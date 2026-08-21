@@ -50,15 +50,7 @@
 };
 
 
-//非マウスキー押下でオートマウスレイヤー(MOUSE)を解除する
-//excluded-positionsに列挙したキー位置(MB1キーおよびクリックコンボに使う位置)は解除トリガーから除外
-&zip_temp_layer {
-    excluded-positions = <16 17 18 26 27 28>;
-};
-
 &trackball_listener {
-    input-processors = <&zip_temp_layer MOUSE 600>;
-
     scroller {
         layers = <SCROLL>;
         input-processors = <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT> //スクロール方向を逆転

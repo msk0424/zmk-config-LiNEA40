@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -160,10 +160,10 @@
 
         CURSOR {
             bindings = <
-&kp LG(LA(O))      &kp LA(LG(P))          &kp LG(LA(LEFT_BRACKET))  &kp LA(LG(RIGHT_BRACKET))   &kp LG(LC(LS(NUMBER_4)))                       &kp N7        &kp N8  &kp N9      &kp KP_ASTERISK  &kp KP_SLASH
-&kp LA(LG(L))      &kp LA(LG(SEMICOLON))  &kp LG(LA(SQT))           &kp LA(LG(LEFT_ARROW))      &kp LG(LA(RIGHT_ARROW))                        &kp NUMBER_4  &kp N5  &kp N6      &kp KP_PLUS      &kp BACKSPACE
-&kp LA(LG(COMMA))  &kp LA(LG(PERIOD))     &kp LG(LA(SLASH))         &kp LS(LA(LG(LEFT_ARROW)))  &kp LS(LA(LG(RIGHT_ARROW)))                    &kp NUMBER_1  &kp N2  &kp N3      &kp KP_MINUS     &kp ENTER
-&trans             &trans                 &trans                    &trans                      &trans                       &trans    &trans  &kp NUMBER_0          &kp PERIOD  &kp COMMA        &kp SLASH
+&kp LG(LA(O))      &kp LA(LG(P))          &kp LG(LA(LEFT_BRACKET))  &kp LA(LG(RIGHT_BRACKET))   &kp LG(LC(LS(NUMBER_4)))                       &kp KP_MINUS  &kp N7        &kp N8        &kp N9        &kp ASTERISK
+&kp LA(LG(L))      &kp LA(LG(SEMICOLON))  &kp LG(LA(SQT))           &kp LA(LG(LEFT_ARROW))      &kp LG(LA(RIGHT_ARROW))                        &kp KP_PLUS   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp BACKSPACE
+&kp LA(LG(COMMA))  &kp LA(LG(PERIOD))     &kp LG(LA(SLASH))         &kp LS(LA(LG(LEFT_ARROW)))  &kp LS(LA(LG(RIGHT_ARROW)))                    &kp SLASH     &kp NUMBER_1  &kp NUMBER_2  &kp N3        &kp ENTER
+&trans             &trans                 &trans                    &trans                      &trans                       &trans    &trans  &kp NUMBER_0                &kp COMMA     &kp PERIOD    &kp SLASH
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_LEFT SCRL_RIGHT>;

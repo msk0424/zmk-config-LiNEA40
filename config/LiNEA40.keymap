@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -126,7 +126,7 @@
 &kp Q                 &kp W         &kp E  &kp R  &kp T                                            &kp Y             &kp U  &kp I       &kp O                    &kp P
 &kp A                 &kp S         &kp D  &kp F  &kp G                                            &kp H             &kp J  &kp K       &kp L                    &kp BACKSPACE
 &kp Z                 &kp X         &kp C  &kp V  &kp B                                            &kp N             &kp M  &kp COMMA   &kp DOT                  &kp ENTER
-&mt LEFT_COMMAND TAB  &kp LEFT_ALT  &none  &sl 3  &mt LEFT_SHIFT LANGUAGE_2  &kp ESC    &kp SPACE  &lt 2 LANGUAGE_1         &lt 6 SEMI  &mt RIGHT_CONTROL SLASH  &lt 4 MINUS
+&mt LEFT_COMMAND TAB  &kp LEFT_ALT  &none  &to 3  &mt LEFT_SHIFT LANGUAGE_2  &kp ESC    &kp SPACE  &lt 2 LANGUAGE_1         &lt 6 SEMI  &mt RIGHT_CONTROL SLASH  &lt 4 MINUS
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_UP SCRL_DOWN>;

@@ -21,8 +21,6 @@
     excluded-positions = <
         16 // J
         7 // I
-        30
-        34
     >;
 };
 

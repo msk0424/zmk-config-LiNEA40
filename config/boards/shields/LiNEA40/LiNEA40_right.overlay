@@ -19,7 +19,7 @@
 //excluded-positionsに列挙したキー位置(MB1キーおよびクリックコンボに使う位置)は解除トリガーから除外
 &zip_temp_layer {
     excluded-positions = <
-        18 // J
+        16 // J
         7 // I
         30
         34

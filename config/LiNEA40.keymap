@@ -179,7 +179,7 @@
 &trans             &trans             &trans             &trans   &trans   &trans    &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)                  &none           &none            &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(C_AC_SCROLL_UP) LC(C_AC_SCROLL_DOWN)>;
+            sensor-bindings = <&mouse_scrl SCRL_LEFT SCRL_RIGHT>;
         };
 
         //5

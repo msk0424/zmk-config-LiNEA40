@@ -48,18 +48,17 @@
 &msc_input_listener {
     speed_up {
         layers = <FUNCTION>;
-        //input-processors = <&zip_wheel_scaler 3 1>; //スクロールを3倍速にする
-        input-processors = <&zip_wheel_scaler 1 5>; //スクロールを遅くする
+        input-processors = <&zip_wheel_scaler 3 1>; //スクロールを3倍速にする
     };
 };
 
 &trackball_listener {
     scroller {
         layers = <FUNCTION>;
-        input-processors =
-            <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,
-            <&zip_xy_to_scroll_mapper>;
+        input-processors = 
+            <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>, //スクロール方向を逆転
+            <&zip_xy_to_scroll_mapper>,
+            <&zip_xy_scaler 1 50>;
     };
 };
 

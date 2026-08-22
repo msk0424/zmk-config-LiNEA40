@@ -58,8 +58,7 @@
         input-processors = 
             <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>, //スクロール方向を逆転
             <&zip_xy_to_scroll_mapper>,
-            //<&zip_xy_scaler 1 50>,
-            <&zip_scroll_scaler 1 30>;
+            <&zip_scroll_scaler 1 30>; //スクロールの速度を調整
     };
 };
 

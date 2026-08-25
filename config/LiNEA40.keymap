@@ -57,10 +57,11 @@
         layers = <FUNCTION>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,
-            //スクロール方向を逆転,
+            //スクロール方向を逆転,,
             <&zip_xy_to_scroll_mapper>,
             <&zip_scroll_scaler 1 30>;
- //スクロールの速度を調整
+
+        //スクロールの速度を調整
     };
 };
 
@@ -149,10 +150,10 @@
 
         MARK {
             bindings = <
-&kp EXCLAMATION  &kp AT         &kp HASH  &kp DOLLAR  &kp PERCENT                    &kp CARET      &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp LCTRL        &kp AMPERSAND  &none     &none       &kp PLUS                       &kp MINUS      &kp EQUAL      &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &trans
-&none            &none          &none     &none       &none                          &kp BACKSLASH  &kp GRAVE      &kp SEMICOLON     &kp SQT               &trans
-&trans           &trans         &trans    &trans      &trans       &trans    &trans  &trans                        &trans            &trans                &trans
+&kp EXCLAMATION  &kp AT  &kp HASH        &kp DOLLAR       &kp PERCENT                    &kp CARET      &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&none            &none   &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PLUS                       &kp MINUS      &kp EQUAL      &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &trans
+&none            &none   &none           &none            &none                          &kp BACKSLASH  &kp GRAVE      &kp SEMICOLON     &kp SQT               &trans
+&trans           &trans  &trans          &trans           &trans       &trans    &trans  &trans                        &trans            &kp LESS_THAN         &kp GREATER_THAN
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_LEFT SCRL_RIGHT>;

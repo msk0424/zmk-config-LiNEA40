@@ -109,10 +109,9 @@
             bindings = <&kp>, <&kp>;
         };
         mouse_scrl: mouse_wheel_scrl {
-            compatible = "zmk,behavior-sensor-rotate-var";
+            compatible = "zmk,behavior-sensor-rotate-key-press";
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;
-            tap-ms = <20>;
         };
     };
 

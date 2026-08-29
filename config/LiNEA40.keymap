@@ -57,7 +57,7 @@
         layers = <FUNCTION>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,
-            //スクロール方向を逆転,,,,,
+            //スクロール方向を逆転,,,,,,
             <&zip_xy_to_scroll_mapper>,
             <&zip_scroll_scaler 1 30>;
 
@@ -70,7 +70,7 @@
         compatible = "zmk,combos";
 
         ZenkakuHankaku {
-            bindings = <&none>;
+            bindings = <&kp TAB>;
             key-positions = <11 12>;
         };
 
@@ -103,6 +103,11 @@
             bindings = <&none>;
             key-positions = <26 27>;
         };
+
+        EscCombos {
+            bindings = <&kp ESCAPE>;
+            key-positions = <1 2>;
+        };
     };
 
     behaviors {
@@ -126,10 +131,10 @@
 
         default_layer {
             bindings = <
-&kp Q                    &kp W         &kp E                   &kp R  &kp T                                              &kp Y             &kp U  &kp I       &kp O                    &kp P
-&kp A                    &kp S         &kp D                   &kp F  &kp G                                              &kp H             &kp J  &kp K       &kp L                    &kp BACKSPACE
-&kp Z                    &kp X         &kp C                   &kp V  &kp B                                              &kp N             &kp M  &kp COMMA   &kp DOT                  &kp ENTER
-&mt LEFT_COMMAND ESCAPE  &kp LEFT_ALT  &mt LEFT_CONTROL MINUS  &none  &mt LEFT_SHIFT LANGUAGE_2  &lt 3 TAB    &kp SPACE  &lt 2 LANGUAGE_1         &lt 5 SEMI  &mt RIGHT_CONTROL SLASH  &lt 4 MINUS
+&kp Q             &kp W         &kp E             &kp R  &kp T                                          &kp Y             &kp U  &kp I       &kp O                    &kp P
+&kp A             &kp S         &kp D             &kp F  &kp G                                          &kp H             &kp J  &kp K       &kp L                    &kp BACKSPACE
+&kp Z             &kp X         &kp C             &kp V  &kp B                                          &kp N             &kp M  &kp COMMA   &kp DOT                  &kp ENTER
+&kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &none  &mt LEFT_SHIFT LANGUAGE_2  &mo 3    &kp SPACE  &lt 2 LANGUAGE_1         &lt 5 SEMI  &mt RIGHT_CONTROL SLASH  &lt 4 MINUS
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_UP SCRL_DOWN>;
@@ -166,7 +171,7 @@
 &kp LG(LA(O))      &kp LA(LG(P))          &kp LG(LA(LEFT_BRACKET))  &kp LA(LG(RIGHT_BRACKET))   &kp LG(LC(LS(NUMBER_4)))                       &kp KP_MINUS  &kp N7        &kp N8        &kp N9        &kp ASTERISK
 &kp LA(LG(L))      &kp LA(LG(SEMICOLON))  &kp LG(LA(SQT))           &kp LA(LG(LEFT_ARROW))      &kp LG(LA(RIGHT_ARROW))                        &kp KP_PLUS   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp BACKSPACE
 &kp LA(LG(COMMA))  &kp LA(LG(PERIOD))     &kp LG(LA(SLASH))         &kp LS(LA(LG(LEFT_ARROW)))  &kp LS(LA(LG(RIGHT_ARROW)))                    &kp SLASH     &kp NUMBER_1  &kp NUMBER_2  &kp N3        &kp ENTER
-&trans             &trans                 &trans                    &trans                      &trans                       &trans    &trans  &kp NUMBER_0                &kp COMMA     &kp PERIOD    &kp SLASH
+&trans             &trans                 &trans                    &trans                      &trans                       &trans    &trans  &kp NUMBER_0                &kp COMMA     &kp PERIOD    &kp COLON
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_LEFT SCRL_RIGHT>;

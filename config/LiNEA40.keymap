@@ -57,7 +57,7 @@
         layers = <FUNCTION>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,
-            //スクロール方向を逆転,,,,,,,
+            //スクロール方向を逆転,,,,,,,,
             <&zip_xy_to_scroll_mapper>,
             <&zip_scroll_scaler 1 30>;
 
@@ -75,7 +75,7 @@
         };
 
         DeleteKey {
-            bindings = <&none>;
+            bindings = <&kp MINUS>;
             key-positions = <7 8>;
         };
 

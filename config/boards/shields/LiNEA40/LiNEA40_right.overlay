@@ -29,7 +29,7 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
-        input-processors = <&zip_temp_layer 1 1500>;
+        input-processors = <&zip_temp_layer 2 1500>;
     };
 };
 
@@ -70,8 +70,8 @@
         spi-max-frequency = <2000000>;
         irq-gpios = <&xiao_d 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; //MOT-D6
         //automouse-layer = <1>;
-        snipe-layers = <3>;
-        scroll-layers = <5>;
+        snipe-layers = <4>;
+        scroll-layers = <6>;
         //scroll-layers = <4 5 6>;
     };
 };

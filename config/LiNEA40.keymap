@@ -8,12 +8,13 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-#define MOUSE 1
-#define MARK 2
-#define CURSOR 3
-#define FUNCTION 4
-#define SCROLL 5
+#define WINDOWS_LAYER 1
+#define MOUSE 2
+#define MARK 3
+#define CURSOR 4
+#define FUNCTION 5
 #define WIRELESS 6
+#define SCROLL 7
 
 //mouse cursol
 

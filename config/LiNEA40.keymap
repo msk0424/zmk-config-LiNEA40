@@ -55,12 +55,12 @@
 };
 
 &trackball_listener {
-    //WINDOWS_LAYERでFUNCTION中のスクロール(Macと上下左右を逆にする)
+    //WINDOWS_LAYERでFUNCTION中のスクロール(Macと上下のみ逆にする)
     //scrollerより先に書くことで優先させる
     win_scroller {
         layers = <WIN_FUNCTION>;
         input-processors =
-            <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
+            <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
             <&zip_xy_to_scroll_mapper>,
             <&zip_scroll_scaler 1 30>;
     };
